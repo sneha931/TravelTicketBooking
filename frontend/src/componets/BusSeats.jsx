@@ -54,7 +54,7 @@ const BusSeats = ({ token }) => {
       
         try {
           const res = await axios.post(
-            'http://localhost:8000/api/bookings/',
+            'https://travelticketbooking.onrender.com/api/bookings/',
             { seat: seatId },
             {
               headers: {
