@@ -16,7 +16,7 @@ const Register = () => {
         e.preventDefault()
         setIsLoading(true)
         try {
-            await axios.post('http://localhost:8000/api/register/', form);
+            await axios.post('https://travelticketbooking.onrender.com/api/register/', form);
             setMessage('Registration successful! You can now login.')
             setForm({ username: '', email: '', password: '' })
         } catch (error) {
