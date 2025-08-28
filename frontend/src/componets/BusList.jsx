@@ -15,7 +15,7 @@ const BusList = ({token}) => {
     useEffect(() => {
         const fetchBuses = async () => {
             try {
-                const response = await axios.get("http://localhost:8000/api/buses/")
+                const response = await axios.get("https://travelticketbooking.onrender.com/api/buses/")
                 setBuses(response.data)
             } catch (error) {
                 console.log('error in fetching buses', error)
