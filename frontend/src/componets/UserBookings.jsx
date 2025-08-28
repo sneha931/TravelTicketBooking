@@ -15,7 +15,7 @@ const UserBookings = ({ token, userId }) => {
     console.log('Fetching bookings for user:', userId);
     console.log('Using token:', token);
 
-    fetch(`http://localhost:8000/api/userbooking/${userId}/`, {
+    fetch(`https://travelticketbooking.onrender.com/api/userbooking/${userId}/`, {
       headers: {
         'Authorization': `Token ${token}`,
         'Content-Type': 'application/json',
