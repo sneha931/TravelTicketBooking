@@ -13,7 +13,7 @@ const BusDetails = () => {
     useEffect(() => {
         const fetchBusDetails = async () => {
             try {
-                const response = await axios(`http://localhost:8000/api/buses/${busId}`)
+                const response = await axios(`https://travelticketbooking.onrender.com/api/buses/${busId}`)
                 setBus(response.data)
             } catch (error) {
                 console.log('Error in fetching details', error)
