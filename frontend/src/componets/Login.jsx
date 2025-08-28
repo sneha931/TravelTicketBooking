@@ -23,7 +23,7 @@ const Login = ({ onLogin }) => {
         e.preventDefault()
         setIsLoading(true)
         try {
-            const response = await axios.post('http://localhost:8000/api/login/', form)
+            const response = await axios.post('https://travelticketbooking.onrender.com/api/login/', form)
             setMessage('Login Success')
             if (onLogin) {
                 onLogin(response.data.token, response.data.user_id)
