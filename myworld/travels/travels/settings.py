@@ -167,3 +167,7 @@ CORS_ALLOW_HEADERS = [
     'x-csrftoken',
     'x-requested-with',
 ]
+CSRF_TRUSTED_ORIGINS = [
+    "https://travelticketbooking.onrender.com", 
+    "https://travel-ticket-booking.vercel.app", 
+]
