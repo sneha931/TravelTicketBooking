@@ -15,7 +15,7 @@ const BusSeats = ({ token }) => {
     useEffect(() => {
         const fetchBusDetails = async () => {
             try {
-                const response = await axios(`http://localhost:8000/api/buses/${busId}`)
+                const response = await axios(`https://travelticketbooking.onrender.com/api/buses/${busId}`)
                 setBus(response.data)
                 setSeats(response.data.seats || [])
             } catch (error) {
@@ -72,7 +72,7 @@ const BusSeats = ({ token }) => {
           );
           
           // Refresh bus data to get updated available seats count
-          const updatedBusResponse = await axios(`http://localhost:8000/api/buses/${busId}`);
+          const updatedBusResponse = await axios(`https://travelticketbooking.onrender.com/api/buses/${busId}`);
           setBus(updatedBusResponse.data);
           
         } catch (error) {
